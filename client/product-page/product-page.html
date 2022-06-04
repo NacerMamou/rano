@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- LINK TO FONT AWESOME-->
+    <script
+      src="https://kit.fontawesome.com/6e06be2705.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- LINK TO Monserrat Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- LINK TO CSS STYLE SHEET -->
+    <link rel="stylesheet" href="../styling/main.css" />
+    <title>Product Page</title>
+  </head>
+  <body>
+    <nav id="navigation-menu">
+      <a href="../index.html" class="navlogo" id="allItemsFilter">
+        <i class="fa-solid fa-cart-shopping"></i> ORINOCO
+      </a>
+      <ul class="navlist">
+        <a href="../index.html" id="allItemsFilter">
+          <i class="fa-solid fa-dumpster"></i>
+        </a>
+
+        <a href="../index.html" id="allItemsFilter">
+          <i class="fa-solid fa-user"></i>
+        </a>
+
+        <a href="../index.html">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </a>
+        <a href="../cart/cart.html">
+          <i class="fa-solid fa-cart-shopping" id="cartClick"></i>
+        </a>
+      </ul>
+    </nav>
+
+    <div id="navigation-filter">
+      <ul class="navfilter">
+        <a href="../index.html" id="woodTableFilter" class="navfilter__link">
+          WOOD
+        </a>
+        <a href="../index.html" id="cameraFilter" class="navfilter__link">
+          CAMERAS
+        </a>
+        <a href="../index.html" id="teddyFilter" class="navfilter__link">
+          TEDDIES
+        </a>
+      </ul>
+    </div>
+
+    <div id="product-page-presentation">
+      <h1 class="h1"></h1>
+
+      <div class="itemPage">
+        <div class="itemPage__container"></div>
+
+        <div class="itemPage__customize">
+          <div class="itemPage__customize__header">
+            <h1 id="itemName0" class="itemPage__customize__header__title">A</h1>
+            <p class="itemPage__customize__header__p" id="itemDescription0">
+              Lorem ipsum dolor sit amet consectetur
+            </p>
+            <div class="itemPage__customize__header__rank">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <p>44 AVIS</p>
+            </div>
+          </div>
+
+          <div class="itemPage__customize__options">
+            <div class="itemPage__customize__options__quantity">
+              Quantity
+              <div>
+                <button class="btn-left">-</button>
+                <p class="topics-number">2</p>
+                <button class="btn-right">+</button>
+              </div>
+            </div>
+            <!-- Add the customize option here-->
+            <div class="itemPage__customize__options__varnish"></div>
+            <div class="itemPage__customize__options__colors"></div>
+            <div class="itemPage__customize__options__lenses"></div>
+            <button
+              class="itemPage__customize__options--button"
+              id="addToCartFinal"
+            >
+              <h3
+                id="itemPrice0"
+                class="itemPage__customize__options--button-price"
+              >
+                12.96 €
+              </h3>
+              <p>AJOUTER AU PANIER</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="icons-container">
+        <i class="fa-brands fa-twitter"></i>
+        <div class="tilted-line">/</div>
+        <i class="fa-brands fa-facebook"></i>
+        <div class="tilted-line">/</div>
+        <i class="fa-brands fa-instagram"></i>
+        <div class="tilted-line">/</div>
+        <i class="fa-brands fa-linkedin"></i>
+        <div class="tilted-line">/</div>
+        <i class="fa-solid fa-basketball"></i>
+      </div>
+      <div class="links-container">
+        <ul class="left-links">
+          <li>WORK</li>
+          <li>STORY</li>
+          <li>SERVICES</li>
+        </ul>
+        <div class="logo">ORINOCO</div>
+        <ul class="right-links">
+          <li>CAREERS</li>
+          <li>CONTACT US</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./product-page.js"></script>
+  </body>
+</html>

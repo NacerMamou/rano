@@ -1,0 +1,51 @@
+@import "./base/typography";
+@import "./utils/variables";
+
+@import "./pages/home-page";
+@import "./pages/product-page";
+@import "./pages/added-to-cart";
+@import "./pages/cart";
+@import "./pages/cart-form";
+@import "./pages/order-confirmation";
+
+@import "./layout/header";
+
+// This the global container used to load the content of a page
+
+/******Header*********/
+#home-page-presentation {
+  @include home-page-style;
+}
+/******Footer*******/
+
+/******Header*********/
+#product-page-presentation {
+  @include product-page-style;
+}
+/******Footer*******/
+
+/******Header*********/
+#added-to-cart-presentation {
+  @include added-to-cart-style;
+}
+/******Footer*******/
+
+/******Header*********/
+#cart-presentation {
+  @include cart-presentation-style;
+}
+/******Footer*******/
+
+/******Header*********/
+#cart-form-presentation {
+  @include cart-form-style;
+}
+/******Footer*******/
+
+/******Header*********/
+#order-confirmation-presentation {
+  @include order-confirmation-style;
+}
+/******Footer*******/
+
+@import "./layout/footer";

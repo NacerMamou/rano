@@ -1,0 +1,958 @@
+@mixin product-page-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 36vw;
+  padding-top: 0.85vw;
+  position: relative;
+  & h1 {
+    display: flex;
+    width: 67%;
+    margin-bottom: 1vw;
+  }
+  .itemPage {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      border-radius: 0.45vw;
+      width: 100%;
+      margin-bottom: 7vw;
+      & img {
+        display: flex;
+        width: 100%;
+        height: 65vw;
+        object-fit: cover;
+        border-radius: 0.45vw 0.45vw 0 0;
+      }
+      &__description {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        border-radius: 0 0 0.45vw 0.45vw;
+        margin-bottom: 0vw;
+        background-color: $bgdColor13;
+        & h2 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 10vw;
+          font-size: 5.5vw;
+          border-bottom: 0.05vw solid gainsboro;
+        }
+        & p {
+          display: flex;
+          width: 100%;
+          padding: 3.5vw 1.2vw;
+          border-radius: 0 0 0.6vw 0.6vw;
+          font-size: 3vw;
+          font-weight: 200;
+        }
+      }
+    }
+    &__customize {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      border-radius: 0.6vw;
+      width: 100%;
+      &__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+        & h1 {
+          display: flex;
+          width: 100%;
+          font-size: 5.3vw;
+          font-weight: 600;
+          line-height: 1.8vw;
+          margin-bottom: 3.5vw;
+        }
+        &__p {
+          display: flex;
+          width: 100%;
+          font-size: 3.5vw;
+          padding: 0;
+          font-weight: 200;
+          color: black;
+          opacity: 0.7;
+          margin-bottom: 3vw;
+        }
+        &__rank {
+          display: flex;
+          margin-bottom: 3vw;
+          width: 100%;
+          & i {
+            display: flex;
+            font-size: 4.5vw;
+            color: $bgdColor12;
+          }
+          & p {
+            display: flex;
+            padding-left: 3vw;
+            font-size: 4.3vw;
+          }
+        }
+      }
+      &__options {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        &__quantity {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          margin-bottom: 2vw;
+          font-size: 4.5vw;
+          & div {
+            display: flex;
+            justify-content: space-between;
+            border: solid 0.1vw black;
+            width: 30%;
+            border-radius: 1.5vw;
+            margin-left: 4vw;
+            .btn-left {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 35%;
+              border: none;
+              background: none;
+              border-radius: 1vw 0 0 1vw;
+              font-weight: 600;
+              font-size: 8vw;
+            }
+            .topics-number {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 30%;
+              font-weight: 600;
+              font-size: 5.5vw;
+            }
+            .btn-right {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 35%;
+              border: none;
+              background: none;
+              border-radius: 0 1vw 1vw 0;
+              font-weight: 600;
+              font-size: 6vw;
+            }
+          }
+        }
+        &__varnish {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          &--title {
+            display: flex;
+            width: 100%;
+            font-size: 4.5vw;
+            font-weight: 400;
+            margin: 0 0 1.2vw 0;
+          }
+          &--element {
+            display: flex;
+            width: 20%;
+            flex-direction: column;
+            margin: 1.3vw 2vw;
+            &-img {
+              display: flex;
+              height: 10vw;
+              object-fit: cover;
+              border-radius: 0.4vw;
+              margin: 0 0 0.3vw 0;
+              border: 0.2vw solid grey;
+            }
+            &-img-active {
+              border-color: red;
+            }
+            & p {
+              display: flex;
+              width: 100%;
+              font-size: 3.2vw;
+              opacity: 0.6;
+              justify-content: center;
+            }
+          }
+        }
+        &__colors {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          margin: 0 0 1.5vw -1.5vw;
+          &--title {
+            display: flex;
+            width: 100%;
+            font-size: 4.5vw;
+            font-weight: 400;
+            margin: 0 0 1.5vw 1.5vw;
+          }
+          &--element {
+            display: flex;
+            flex-direction: column;
+            margin: 0 0.8vw 0.6vw 0;
+            width: 13vw;
+            align-items: center;
+            &-div {
+              display: flex;
+              height: 11vw;
+              width: 11vw;
+              border-radius: 50%;
+              margin: 0 0 0.7vw 0;
+              background-color: $darkBrown;
+              border: 0.15vw solid grey;
+            }
+            &-div-active {
+              border-color: red;
+            }
+            & p {
+              display: flex;
+              font-size: 2.5vw;
+              opacity: 0.6;
+              justify-content: center;
+            }
+          }
+        }
+        &__lenses {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          margin: 0 0 3vw 0;
+          &--title {
+            display: flex;
+            width: 100%;
+            font-size: 4.5vw;
+            font-weight: 400;
+            margin: 0 0 3vw 0;
+          }
+          &--element {
+            display: flex;
+            font-size: 1.6vw;
+            margin: 0 1.5vw 1.5vw 0;
+            border: 0.2vw solid grey;
+            text-overflow: nowrap;
+            align-items: center;
+            justify-content: center;
+            padding: 0.3vw;
+            border-radius: 0.3vw;
+            background-color: $beigeColor;
+            font-size: 3.7vw;
+          }
+          &--active {
+            border-color: red;
+          }
+        }
+        &--button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 11vw;
+          border-radius: 0.3vw;
+          border: none;
+          background-color: $txtColor7;
+          color: white;
+          &-price {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            font-size: 5vw;
+            font-weight: 600;
+            width: 40%;
+            padding: 0 0 0.65vw 3vw;
+          }
+          & p {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            font-size: 3.7vw;
+            font-weight: 600;
+            width: 60%;
+            padding: 0 3vw 0 0;
+          }
+        }
+      }
+    }
+  }
+  @media all and (min-width: 576px) {
+    margin-top: 15vw;
+    padding-top: 0.85vw;
+    justify-content: center;
+    & h1 {
+      width: 67%;
+      margin-bottom: 1vw;
+    }
+    .itemPage {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 90%;
+      &__container {
+        border-radius: 0.45vw;
+        width: 55%;
+        & img {
+          width: 100%;
+          height: 50vw;
+          border-radius: 0.45vw 0.45vw 0 0;
+        }
+        &__description {
+          width: 100%;
+          border-radius: 0 0 0.45vw 0.45vw;
+          & h2 {
+            font-size: 3.5vw;
+            padding: 3vw 0;
+            width: 95%;
+            height: 5vw;
+            border-bottom: 0.05vw solid gainsboro;
+          }
+          & p {
+            width: 95%;
+            padding: 3.5vw 1.2vw 3.5vw 1.2vw;
+            border-radius: 0 0 0.6vw 0.6vw;
+            font-size: 1.5vw;
+            font-weight: 200;
+            line-height: 1.6vw;
+          }
+        }
+      }
+      &__customize {
+        border-radius: 0.6vw;
+        width: 41%;
+        &__header {
+          margin-bottom: 2vw;
+          & h1 {
+            font-size: 3vw;
+            font-weight: 600;
+            line-height: 3.5vw;
+            margin-bottom: 0.6vw;
+          }
+          &__p {
+            width: 100%;
+            font-size: 1.5vw;
+            margin-bottom: 1.5vw;
+          }
+          &__rank {
+            & i {
+              font-size: 2.8vw;
+            }
+            & p {
+              padding-left: 1.3vw;
+              font-size: 2.8vw;
+            }
+          }
+        }
+        &__options {
+          &__quantity {
+            margin-bottom: 1.5vw;
+            font-size: 2.2vw;
+            & div {
+              width: 35%;
+              border-radius: 1vw;
+              margin-left: 2vw;
+              padding: 0.3vw 0;
+              .btn-left {
+                border-radius: 1vw 0 0 1vw;
+                font-size: 3vw;
+                padding: 0 0;
+              }
+              .btn-right {
+                width: 35%;
+                border-radius: 0 1vw 1vw 0;
+                font-size: 2.5vw;
+                padding: 0 0;
+              }
+              .topics-number {
+                width: 30%;
+                font-size: 2.5vw;
+                padding: 0 0;
+              }
+            }
+          }
+          &__varnish {
+            margin: 0 0 1vw 0;
+            &--title {
+              font-size: 1.9vw;
+              margin: 0 0 1.2vw 0;
+            }
+            &--element {
+              margin: 0.7vw 0.8vw;
+              &-img {
+                height: 4.7vw;
+                width: 7.7vw;
+                border-radius: 0.4vw;
+                margin: 0 0 0.3vw 0;
+              }
+              & p {
+                font-size: 1.3vw;
+              }
+            }
+          }
+          &__colors {
+            margin: 0 0 1.5vw -1.5vw;
+            &--title {
+              width: 100%;
+              font-size: 2vw;
+              margin: 0 0 1.3vw 1.5vw;
+            }
+            &--element {
+              margin: 0 0.8vw 0.6vw 0;
+              width: 7.9vw;
+              &-div {
+                height: 5.5vw;
+                width: 5.5vw;
+                border-radius: 50%;
+                margin: 0 0 0.5vw 0;
+              }
+              & p {
+                font-size: 1.2vw;
+                opacity: 0.6;
+              }
+            }
+          }
+          &__lenses {
+            margin: 0 0 3vw 0;
+            &--title {
+              font-size: 2vw;
+              font-weight: 400;
+              margin: 0 0 1vw 0;
+            }
+            &--element {
+              font-size: 1.6vw;
+              margin: 0 0.6vw 0.6vw 0;
+              border: 0.2vw solid grey;
+              padding: 0.3vw;
+              border-radius: 0.3vw;
+            }
+          }
+          &--button {
+            height: 5vw;
+            border-radius: 0.3vw;
+            &-price {
+              font-size: 2vw;
+              font-weight: 600;
+              width: 40%;
+              padding: 0 0 0.65vw 1.4vw;
+            }
+            & p {
+              font-size: 1.25vw;
+              font-weight: 600;
+              width: 60%;
+              padding: 0 1.7vw 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media all and (min-width: 768px) {
+    margin-top: 12vw;
+    padding-top: 0.85vw;
+    & h1 {
+      margin-bottom: 1vw;
+    }
+    .itemPage {
+      width: 95%;
+      &__container {
+        border-radius: 0.45vw;
+        width: 53%;
+        & img {
+          width: 100%;
+          height: 32vw;
+          border-radius: 0.45vw 0.45vw 0 0;
+        }
+        &__description {
+          box-shadow: 0 0 0vw grey;
+          border-radius: 0 0 0.45vw 0.45vw;
+          & h2 {
+            height: 5vw;
+            border-bottom: 0.05vw solid gainsboro;
+          }
+          & p {
+            padding: 3.5vw 1.2vw 3.5vw 1.2vw;
+            border-radius: 0 0 0.6vw 0.6vw;
+            font-size: 1.5vw;
+            font-weight: 200;
+            line-height: 1.6vw;
+          }
+        }
+      }
+      &__customize {
+        border-radius: 0.6vw;
+        width: 39%;
+        &__header {
+          margin-bottom: 3.5vw;
+          & h1 {
+            font-size: 2.5vw;
+            margin: 0;
+            font-weight: 600;
+            line-height: 1.8vw;
+            margin-bottom: 0.6vw;
+          }
+          &__p {
+            font-size: 1.5vw;
+            padding: 0;
+            font-weight: 200;
+            margin-bottom: 1.5vw;
+          }
+          &__rank {
+            width: 100%;
+            & i {
+              font-size: 2vw;
+            }
+            & p {
+              font-size: 2vw;
+              padding-left: 2vw;
+            }
+          }
+        }
+        &__options {
+          &__quantity {
+            margin-bottom: 1.5vw;
+            font-size: 1.9vw;
+            & div {
+              border-radius: 1.5vw;
+              margin-left: 1vw;
+              .btn-left {
+                font-size: 3vw;
+              }
+              .topics-number {
+                font-weight: 600;
+              }
+              .btn-right {
+                border-radius: 0 1vw 1vw 0;
+                font-size: 2vw;
+                padding: 0.1vw 0 0 0.25vw;
+              }
+            }
+          }
+          &__varnish {
+            margin: 0 0 1vw 0;
+            &--title {
+              font-size: 1.9vw;
+              margin: 0 0 1.2vw 0;
+            }
+            &--element {
+              margin: 0.7vw 0.7vw;
+              &-img {
+                height: 4.45vw;
+                width: 8.2vw;
+                border-radius: 0.4vw;
+                margin: 0 0 0.3vw 0;
+                border: 0.2vw solid grey;
+              }
+              &-img-active {
+                border-color: red;
+              }
+              & p {
+                font-size: 1.2vw;
+                opacity: 0.6;
+              }
+            }
+          }
+          &__colors {
+            width: 100%;
+            margin: 0 0 1.5vw -1.5vw;
+            &--title {
+              width: 100%;
+              font-size: 2vw;
+              font-weight: 400;
+              margin: 0 0 1.3vw 1.5vw;
+            }
+            &--element {
+              margin: 0 0.8vw 0.6vw 0;
+              width: 7.9vw;
+              &-div {
+                height: 5.5vw;
+                width: 5.5vw;
+                margin: 0 0 0.5vw 0;
+                border: 0.15vw solid grey;
+              }
+              &-div-active {
+                border-color: red;
+              }
+              & p {
+                font-size: 1.2vw;
+              }
+            }
+          }
+          &__lenses {
+            width: 100%;
+            margin: 0 0 3vw 0;
+            &--title {
+              width: 100%;
+              font-size: 2vw;
+              font-weight: 400;
+              margin: 0 0 1vw 0;
+            }
+            &--element {
+              font-size: 1.6vw;
+              margin: 0 0.6vw 0.6vw 0;
+              border: 0.2vw solid grey;
+              padding: 0.3vw;
+              border-radius: 0.3vw;
+            }
+            &--active {
+              border-color: red;
+            }
+          }
+          &--button {
+            width: 100%;
+            height: 5vw;
+            border-radius: 0.3vw;
+            border: none;
+            &-price {
+              font-size: 2vw;
+              font-weight: 600;
+              width: 40%;
+              padding: 0 0 0.65vw 1.4vw;
+            }
+            & p {
+              font-size: 1.25vw;
+              font-weight: 600;
+              width: 60%;
+              padding: 0 1.7vw 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media all and (min-width: 992px) {
+    width: 100%;
+    margin-top: 9vw;
+    padding-top: 0.85vw;
+    & h1 {
+      margin-bottom: 1vw;
+    }
+    .itemPage {
+      width: 90%;
+      &__container {
+        border-radius: 0.45vw;
+        width: 53%;
+        & img {
+          height: 32vw;
+          border-radius: 0.45vw 0.45vw 0 0;
+        }
+        &__description {
+          border-radius: 0 0 0.45vw 0.45vw;
+          & h2 {
+            height: 5vw;
+            border-bottom: 0.05vw solid gainsboro;
+          }
+          & p {
+            padding: 3.5vw 1.2vw 3.5vw 1.2vw;
+            border-radius: 0 0 0.6vw 0.6vw;
+            font-size: 1.5vw;
+            line-height: 1.6vw;
+          }
+        }
+      }
+      &__customize {
+        justify-content: start;
+        border-radius: 0.6vw;
+        &__header {
+          margin-bottom: 3.5vw;
+          & h1 {
+            font-size: 2.5vw;
+            line-height: 1.8vw;
+            margin-bottom: 0.6vw;
+          }
+          &__p {
+            font-size: 1.5vw;
+            margin-bottom: 1.5vw;
+          }
+          &__rank {
+            width: 100%;
+            & i {
+              font-size: 1.5vw;
+            }
+            & p {
+              padding-left: 1.3vw;
+            }
+          }
+        }
+        &__options {
+          width: 100%;
+          &__quantity {
+            margin-bottom: 1.5vw;
+            font-size: 1.9vw;
+            & div {
+              border-radius: 1.5vw;
+              margin-left: 2.5vw;
+              .btn-left {
+                border-radius: 1vw 0 0 1vw;
+                font-size: 3vw;
+                padding: 0 0.2vw 0.3vw 0;
+              }
+              .btn-right {
+                border-radius: 0 1vw 1vw 0;
+                font-weight: 600;
+                font-size: 2vw;
+                padding: 0.1vw 0 0 0.25vw;
+              }
+              .topics-number {
+              }
+            }
+          }
+          &__varnish {
+            margin: 0 0 1vw 0;
+            &--title {
+              font-size: 1.9vw;
+              font-weight: 400;
+              margin: 0 0 1.2vw 0;
+            }
+            &--element {
+              &-img {
+                height: 4.45vw;
+                width: 7.5vw;
+                border-radius: 0.4vw;
+                margin: 0 0 0.3vw 0;
+                border: 0.2vw solid grey;
+              }
+              &-img-active {
+                border-color: red;
+              }
+              & p {
+                width: 100%;
+                font-size: 1.2vw;
+              }
+            }
+          }
+          &__colors {
+            width: 100%;
+            margin: 0 0 1.5vw -1.5vw;
+            &--title {
+              width: 100%;
+              font-size: 2vw;
+              font-weight: 400;
+              margin: 0 0 1.3vw 1.5vw;
+            }
+            &--element {
+              margin: 0 0.8vw 0.6vw 0;
+              width: 7.9vw;
+              &-div {
+                height: 5.5vw;
+                width: 5.5vw;
+                margin: 0 0 0.5vw 0;
+                border: 0.15vw solid grey;
+              }
+              &-div-active {
+                border-color: red;
+              }
+              & p {
+                font-size: 1.2vw;
+              }
+            }
+          }
+          &__lenses {
+            margin: 0 0 3vw 0;
+            &--title {
+              font-size: 2vw;
+              margin: 0 0 1vw 0;
+            }
+            &--element {
+              font-size: 1.6vw;
+              margin: 0 0.6vw 0.6vw 0;
+              border: 0.2vw solid grey;
+              padding: 0.3vw;
+              border-radius: 0.3vw;
+            }
+            &--active {
+              border-color: red;
+            }
+          }
+          &--button {
+            height: 5vw;
+            border-radius: 0.3vw;
+            &-price {
+              font-size: 2vw;
+              padding: 0 0 0.65vw 1.4vw;
+            }
+            & p {
+              font-size: 1.25vw;
+              padding: 0 1.7vw 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media all and (min-width: 1200px) {
+    margin-top: 9vw;
+    padding-top: 0.85vw;
+    & h1 {
+      width: 67%;
+      margin-bottom: 1vw;
+    }
+    .itemPage {
+      width: 67%;
+      &__container {
+        border-radius: 0.45vw;
+        width: 52%;
+        & img {
+          height: 30vw;
+          border-radius: 0.45vw 0.45vw 0 0;
+        }
+        &__description {
+          box-shadow: 0 0 0vw grey;
+          border-radius: 0 0 0.45vw 0.45vw;
+          & h2 {
+            height: 4vw;
+            border-bottom: 0.05vw solid gainsboro;
+          }
+          & p {
+            padding: 3.5vw 1.2vw 3.5vw 1.2vw;
+            border-radius: 0 0 0.6vw 0.6vw;
+            font-size: 1.1vw;
+            font-weight: 200;
+            line-height: 1.6vw;
+          }
+        }
+      }
+      &__customize {
+        border-radius: 0.6vw;
+        width: 42%;
+        &__header {
+          margin-bottom: 3.5vw;
+          & h1 {
+            font-size: 1.6vw;
+            line-height: 1.8vw;
+            margin-bottom: 0.6vw;
+          }
+          &__p {
+            font-size: 1vw;
+            opacity: 0.7;
+            margin-bottom: 1.5vw;
+          }
+          &__rank {
+            & i {
+              font-size: 1.3vw;
+            }
+            & p {
+              padding-left: 4vw;
+              font-size: 1.3vw;
+            }
+          }
+        }
+        &__options {
+          &__quantity {
+            margin-bottom: 1.5vw;
+            font-size: 1.5vw;
+            & div {
+              width: 30%;
+              border-radius: 1.5vw;
+              margin-left: 1vw;
+              .btn-left {
+                width: 35%;
+                border-radius: 1vw 0 0 1vw;
+                font-size: 2.5vw;
+              }
+              .btn-right {
+                width: 35%;
+                border-radius: 0 1vw 1vw 0;
+                font-size: 1.6vw;
+              }
+              .topics-number {
+                font-size: 1.7vw;
+                width: 30%;
+              }
+            }
+          }
+          &__varnish {
+            width: 100%;
+            margin: 0 0 1.5vw 0;
+            &--title {
+              width: 100%;
+              font-size: 1vw;
+              margin: 0 0 1vw 0;
+            }
+            &--element {
+              margin: 0.2vw 0.1vw;
+              &-img {
+                height: 3vw;
+                width: 5vw;
+                border-radius: 0.4vw;
+                margin: 0 0 0.3vw 0;
+                border: 0.2vw solid grey;
+              }
+              &-img-active {
+                border-color: red;
+              }
+              & p {
+                width: 100%;
+                font-size: 0.8vw;
+              }
+            }
+          }
+          &__colors {
+            margin: 0 0 1.5vw 0;
+            &--title {
+              font-size: 1vw;
+              margin: 0 0 1vw 0;
+            }
+            &--element {
+              margin: 0 0.3vw 0.6vw 0;
+              &-div {
+                height: 4vw;
+                width: 4vw;
+                margin: 0 0 0.3vw 0;
+                border: 0.15vw solid grey;
+              }
+              &-div-active {
+                border-color: red;
+              }
+              & p {
+                width: 100%;
+                font-size: 0.6vw;
+              }
+            }
+          }
+          &__lenses {
+            width: 100%;
+            margin: 0 0 1.5vw 0;
+            &--title {
+              width: 100%;
+              font-size: 1vw;
+              font-weight: 400;
+              margin: 0 0 1vw 0;
+            }
+            &--element {
+              margin: 0 0.3vw 0.6vw 0;
+              border: 0.2vw solid grey;
+              padding: 0.3vw;
+              border-radius: 0.3vw;
+            }
+            &--active {
+              border-color: red;
+            }
+          }
+          &--button {
+            width: 100%;
+            height: 3.5vw;
+            border-radius: 0.3vw;
+            &-price {
+              font-size: 1.3vw;
+              padding: 0 0 0.65vw 1.4vw;
+            }
+            & p {
+              font-size: 0.9vw;
+              padding: 0 1.7vw 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+chmod 400 myaws-rsa-key.pem
+
+connect
+ssh -i "myaws-rsa-key.pem" ec2-user@ec2-3-68-73-157.eu-central-1.compute.amazonaws.com
+
+in windows use puty
+
+convert the key and config a new session with
+
+auth = converted key
+data username= ec2-user
+hostname: ec2-3-68-73-157.eu-central-1.compute.amazonaws.com
+
+save the session and open
+
+
+When connected should update packages
+
+sudo yum update -y
+
+and install docker
+
+sudo yam install docker
+
+start docker service
+sudo service docker start
+
+add ec2-user to group
+
+sudo usermod -a -G docker ec2-user

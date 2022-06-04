@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- LINK TO FONT AWESOME-->
+    <script
+      src="https://kit.fontawesome.com/6e06be2705.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- LINK TO Monserrat Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LINK TO CSS STYLE SHEET -->
+    <link rel="stylesheet" href="../styling/main.css" />
+    <title>Welcome to Orinonco</title>
+  </head>
+  <body>
+    <nav id="navigation-menu">
+      <a href="../index.html" class="navlogo" id="allItemsFilter">
+        <i class="fa-solid fa-cart-shopping"></i> ORINOCO
+      </a>
+      <ul class="navlist">
+        <a href="../index.html">
+          <i class="fa-solid fa-dumpster"></i>
+        </a>
+        <a href="../index.html">
+          <i class="fa-solid fa-user"></i>
+        </a>
+        <a href="../index.html">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </a>
+        <a href="../cart/cart.html">
+          <i class="fa-solid fa-cart-shopping" id="cartClick"></i>
+        </a>
+      </ul>
+    </nav>
+
+    <div id="navigation-filter">
+      <ul class="navfilter">
+        <a href="../index.html" id="woodTableFilter" class="navfilter__link">
+          WOOD
+        </a>
+        <a href="../index.html" id="cameraFilter" class="navfilter__link">
+          CAMERAS
+        </a>
+        <a href="../index.html" id="teddyFilter" class="navfilter__link">
+          TEDDIES
+        </a>
+      </ul>
+    </div>
+
+    <div id="order-confirmation-presentation">
+      <h1 class="h1"></h1>
+      <div class="cart">
+        <div class="cart__orderConfirmation">
+          <i class="fa-solid fa-check cart__orderConfirmation__icon"></i>
+          <h1 class="cart__orderConfirmation__title">
+            THANK YOU FOR YOUR PURCHASE
+          </h1>
+          <h2 class="cart__orderConfirmation__teddiesOrder">
+            Your Teddies order number is :
+            <p
+              id="teddiesOrder-Id"
+              class="cart__orderConfirmation__teddiesOrder-Id"
+            >
+              123412341234
+            </p>
+          </h2>
+          <h2 class="cart__orderConfirmation__woodTablesOrder">
+            Your Wood Tables order number is :
+            <p
+              id="woodTablesOrder-Id"
+              class="cart__orderConfirmation__woodTablesOrder-Id"
+            >
+              123412342314
+            </p>
+          </h2>
+          <h2 class="cart__orderConfirmation__camerasOrder">
+            Your Cameras order number is :
+            <p
+              id="camerasOrder-Id"
+              class="cart__orderConfirmation__camerasOrder-Id"
+            >
+              431234123413
+            </p>
+          </h2>
+          <p class="cart__orderConfirmation__message">
+            We'll email you an order confirmation with details and tracking
+            informations
+          </p>
+          <button class="cart__orderConfirmation__button" id="continueShopping">
+            Continue Shopping
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="icons-container">
+        <i class="fa-brands fa-twitter"></i>
+        <div class="tilted-line">/</div>
+        <i class="fa-brands fa-facebook"></i>
+        <div class="tilted-line">/</div>
+        <i class="fa-brands fa-instagram"></i>
+        <div class="tilted-line">/</div>
+        <i class="fa-brands fa-linkedin"></i>
+        <div class="tilted-line">/</div>
+        <i class="fa-solid fa-basketball"></i>
+      </div>
+      <div class="links-container">
+        <ul class="left-links">
+          <li>WORK</li>
+          <li>STORY</li>
+          <li>SERVICES</li>
+        </ul>
+        <div class="logo">ORINOCO</div>
+        <ul class="right-links">
+          <li>CAREERS</li>
+          <li>CONTACT US</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./order-confirmation.js"></script>
+  </body>
+</html>

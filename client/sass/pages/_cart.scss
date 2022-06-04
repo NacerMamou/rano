@@ -1,0 +1,802 @@
+@mixin cart-presentation-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 34vw;
+  padding-top: 0.85vw;
+  position: relative;
+  & h1 {
+    display: flex;
+    width: 67%;
+    margin-bottom: 1vw;
+  }
+  .cart {
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border-radius: 0.4vw;
+      margin-bottom: 5vw;
+      & .h2 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 9vw;
+        padding-left: 2.5vw;
+        box-shadow: 0 0 0.1vw gray;
+        border-radius: 0.2vw;
+        background-color: $bgdColor13;
+        font-size: 3.5vw;
+        font-weight: 600;
+        margin-bottom: 1vw;
+      }
+      &__topic {
+        display: flex;
+        width: 100%;
+        height: 26vw;
+        margin: 1vw 0;
+        box-shadow: 0 0 0.4vw gray;
+        border-radius: 0.4vw;
+        & img {
+          display: flex;
+          width: 25%;
+          justify-content: center;
+          align-items: center;
+          font-size: 5vw;
+          padding: 0.1vw;
+          border-radius: 0.4vw 0 0 0.4vw;
+          object-fit: cover;
+        }
+        &__infos {
+          display: flex;
+          flex-direction: column;
+          width: 55%;
+          padding: 0.8vw 0 0.8vw 1vw;
+          & h2 {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-size: 4vw;
+            padding-bottom: 1.2vw;
+          }
+          &__description {
+            display: flex;
+            font-size: 2.2vw;
+            padding-bottom: 2vw;
+          }
+          & div {
+            display: flex;
+            justify-content: space-between;
+            border: solid 0.1vw black;
+            width: 40%;
+            height: 30%;
+            border-radius: 1.5vw;
+            .btn-left {
+              display: flex;
+              justify-content: end;
+              align-items: center;
+              width: 35%;
+              border: none;
+              background: none;
+              border-radius: 1vw 0 0 1vw;
+              font-weight: 600;
+              font-size: 7vw;
+              padding: 0 1.5vw 0.3vw 0;
+            }
+            .btn-right {
+              display: flex;
+              justify-content: start;
+              align-items: center;
+              width: 35%;
+              border: none;
+              background: none;
+              border-radius: 0 1vw 1vw 0;
+              font-weight: 600;
+              font-size: 5vw;
+              padding: 0.1vw 0 0 1vw;
+            }
+            .topics-number {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 30%;
+              font-weight: 600;
+            }
+          }
+        }
+        &__options {
+          display: flex;
+          width: 18%;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: end;
+          padding: 0.4vw 0vw 1.5vw 0;
+          & a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3.5vw;
+            width: 3.5vw;
+            & i {
+              display: flex;
+              font-size: 5vw;
+              height: 100%;
+              width: 100%;
+              padding: 5vw 1.3vw 0 0;
+              align-items: center;
+              justify-content: center;
+              color: black;
+              opacity: 0.55;
+            }
+          }
+          & h3 {
+            display: flex;
+            justify-content: end;
+            width: 100%;
+            color: $txtColor7;
+            font-size: 3.3vw;
+          }
+        }
+      }
+    }
+    &__price {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      width: 100%;
+      border-radius: 0.4vw;
+
+      &__detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+
+        &__sous-total {
+          display: flex;
+          width: 100%;
+          margin-bottom: 4vw;
+          & h2 {
+            display: flex;
+            align-items: center;
+            width: 75%;
+            font-size: 4.5vw;
+            font-weight: 600;
+            & .span1 {
+              display: flex;
+              padding: 0.5vw 0 0 0.35vw;
+              font-size: 2.8vw;
+              font-weight: 200;
+            }
+          }
+          & h3 {
+            display: flex;
+            justify-content: end;
+            width: 25%;
+            align-items: center;
+            font-size: 4vw;
+          }
+        }
+        &__frais-envoi {
+          display: flex;
+          width: 100%;
+          margin-bottom: 4vw;
+          & h2 {
+            display: flex;
+            align-items: center;
+            width: 75%;
+            font-size: 4.5vw;
+            font-weight: 600;
+          }
+          & h3 {
+            display: flex;
+            justify-content: end;
+            width: 25%;
+            align-items: center;
+            font-size: 4vw;
+          }
+        }
+        &__total-price {
+          display: flex;
+          width: 100%;
+          margin-bottom: 6vw;
+          & h2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-items: start;
+            width: 75%;
+            font-size: 4.5vw;
+            font-weight: 600;
+
+            & p {
+              display: flex;
+              font-size: 2.8vw;
+              font-weight: 200;
+            }
+          }
+          & h3 {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            width: 25%;
+            font-size: 4vw;
+            font-weight: 600;
+          }
+        }
+      }
+      & button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 14vw;
+        border-radius: 0.3vw;
+        border: none;
+        background-color: $txtColor7;
+        color: white;
+        font-size: 4.5vw;
+        font-weight: 600;
+      }
+    }
+  }
+  @media all and (min-width: 576px) {
+    margin-top: 14vw;
+    padding-top: 0.85vw;
+    & h1 {
+      margin-bottom: 0vw;
+    }
+    .cart {
+      width: 90%;
+      &__container {
+        width: 100%;
+        border-radius: 0.4vw;
+        & .h2 {
+          height: 4vw;
+          padding-left: 2.5vw;
+          box-shadow: 0 0 0.1vw gray;
+          border-radius: 0.2vw;
+          font-size: 2vw;
+          margin-bottom: 1vw;
+        }
+        &__topic {
+          height: 18vw;
+          margin: 0.9vw 0;
+          box-shadow: 0 0 0.1vw gray;
+          border-radius: 0.4vw;
+          & img {
+            width: 23%;
+            font-size: 5vw;
+            padding: 0.1vw;
+            border-radius: 0.4vw 0 0 0.4vw;
+          }
+          &__infos {
+            width: 58%;
+            padding: 0.8vw 0 0.8vw 1vw;
+            & h2 {
+              font-size: 2.5vw;
+              padding-bottom: 0.7vw;
+            }
+            &__description {
+              font-size: 1.35vw;
+              padding-bottom: 1.5vw;
+            }
+            & div {
+              border: solid 0.1vw black;
+              width: 30%;
+              height: 27%;
+              border-radius: 1.5vw;
+              .btn-left {
+                width: 35%;
+                border-radius: 1vw 0 0 1vw;
+                font-size: 2.5vw;
+                padding: 0 0.2vw 0.3vw 0;
+              }
+              .btn-right {
+                width: 35%;
+                background: none;
+                border-radius: 0 1vw 1vw 0;
+                font-size: 1.6vw;
+                padding: 0.1vw 0 0 0.25vw;
+              }
+              .topics-number {
+                width: 30%;
+              }
+            }
+          }
+          &__options {
+            width: 18%;
+            padding: 0.4vw 0vw 1.5vw 0;
+            & a {
+              height: 3.5vw;
+              width: 3.5vw;
+              & i {
+                font-size: 3.6vw;
+                padding: 1.1vw 1.1vw 0 0;
+              }
+            }
+            & h3 {
+              font-size: 2.1vw;
+            }
+          }
+        }
+      }
+      &__price {
+        border-radius: 0.4vw;
+        &__detail {
+          width: 100%;
+
+          &__sous-total {
+            margin-bottom: 3vw;
+            & h2 {
+              width: 75%;
+              font-size: 2.4vw;
+              & .span1 {
+                padding: 0.5vw 0 0 0.35vw;
+                font-size: 1vw;
+              }
+            }
+            & h3 {
+              width: 25%;
+              font-size: 1.5vw;
+            }
+          }
+          &__frais-envoi {
+            width: 100%;
+            margin-bottom: 3vw;
+            & h2 {
+              width: 75%;
+              font-size: 2.5vw;
+            }
+            & h3 {
+              width: 25%;
+              font-size: 1.6vw;
+            }
+          }
+          &__total-price {
+            margin-bottom: 4vw;
+            & h2 {
+              width: 75%;
+              font-size: 2.5vw;
+
+              & p {
+                font-size: 1.4vw;
+              }
+            }
+            & h3 {
+              width: 25%;
+              font-size: 1.5vw;
+            }
+          }
+        }
+        & button {
+          height: 6vw;
+          border-radius: 0.3vw;
+          font-size: 1.8vw;
+        }
+      }
+    }
+  }
+  @media all and (min-width: 768px) {
+    margin-top: 11vw;
+    padding-top: 0.85vw;
+    & h1 {
+      margin-bottom: 1vw;
+    }
+    .cart {
+      width: 94%;
+      flex-direction: row;
+      justify-content: space-between;
+      &__container {
+        width: 63%;
+        border-radius: 0.4vw;
+        & .h2 {
+          height: 2.7vw;
+          padding-left: 2.5vw;
+          margin-bottom: 0.3vw;
+          box-shadow: 0 0 0.1vw gray;
+          border-radius: 0.2vw;
+          font-size: 1.4vw;
+        }
+        &__topic {
+          height: 14vw;
+          margin: 0.5vw 0;
+          box-shadow: 0 0 0.1vw gray;
+          border-radius: 0.4vw;
+          & img {
+            width: 23%;
+            font-size: 5vw;
+            padding: 0.1vw;
+            border-radius: 0.4vw 0 0 0.4vw;
+          }
+          &__infos {
+            width: 60%;
+            padding: 0.8vw 0 0.8vw 1vw;
+            & h2 {
+              font-size: 2vw;
+              padding-bottom: 0.7vw;
+            }
+            &__description {
+              font-size: 1.15vw;
+              padding-bottom: 1.3vw;
+            }
+            & div {
+              border: solid 0.1vw black;
+              width: 22%;
+              height: 26%;
+              border-radius: 1.5vw;
+              .btn-left {
+                width: 35%;
+                border-radius: 1vw 0 0 1vw;
+                font-size: 2.5vw;
+                padding: 0 0.2vw 0.3vw 0;
+              }
+              .btn-right {
+                width: 35%;
+                border-radius: 0 1vw 1vw 0;
+                font-size: 1.6vw;
+                padding: 0.1vw 0 0 0.25vw;
+              }
+              .topics-number {
+                width: 30%;
+              }
+            }
+          }
+          &__options {
+            width: 17%;
+            padding: 0.4vw 0.4vw 1.5vw 0;
+            & a {
+              height: 3.5vw;
+              width: 3.5vw;
+              & i {
+                font-size: 3vw;
+                padding: 1vw 1vw 0 0;
+              }
+            }
+            & h3 {
+              font-size: 2vw;
+            }
+          }
+        }
+      }
+      &__price {
+        width: 35%;
+        border-radius: 0.4vw;
+
+        &__detail {
+          width: 100%;
+          &__sous-total {
+            margin-bottom: 2vw;
+            & h2 {
+              width: 75%;
+              font-size: 1.8vw;
+              & .span1 {
+                padding: 0.5vw 0 0 0.35vw;
+                font-size: 0.9vw;
+              }
+            }
+            & h3 {
+              width: 25%;
+              font-size: 1.3vw;
+            }
+          }
+          &__frais-envoi {
+            width: 100%;
+            margin-bottom: 2vw;
+            & h2 {
+              width: 75%;
+              font-size: 1.9vw;
+            }
+            & h3 {
+              width: 25%;
+              font-size: 1.3vw;
+            }
+          }
+          &__total-price {
+            margin-bottom: 2vw;
+            & h2 {
+              width: 75%;
+              font-size: 1.9vw;
+              & p {
+                font-size: 1.1vw;
+              }
+            }
+            & h3 {
+              width: 25%;
+              font-size: 1.3vw;
+            }
+          }
+        }
+        & button {
+          height: 4.5vw;
+          border-radius: 0.3vw;
+          font-size: 1.4vw;
+        }
+      }
+    }
+  }
+  @media all and (min-width: 992px) {
+    margin-top: 8vw;
+    padding-top: 0.85vw;
+    & h1 {
+      margin-bottom: 1vw;
+    }
+    .cart {
+      width: 88%;
+      &__container {
+        width: 63%;
+        border-radius: 0.4vw;
+        & .h2 {
+          height: 2.7vw;
+          padding-left: 2.5vw;
+          box-shadow: 0 0 0.1vw gray;
+          border-radius: 0.2vw;
+          font-size: 1.4vw;
+          margin-bottom: 0.3vw;
+        }
+        &__topic {
+          height: 14vw;
+          margin: 0.5vw 0;
+          box-shadow: 0 0 0.1vw gray;
+          border-radius: 0.4vw;
+          & img {
+            width: 23%;
+            font-size: 5vw;
+            padding: 0.1vw;
+            border-radius: 0.4vw 0 0 0.4vw;
+          }
+          &__infos {
+            width: 60%;
+            padding: 0.8vw 0 0.8vw 1vw;
+            & h2 {
+              font-size: 2vw;
+              padding-bottom: 0.7vw;
+            }
+            &__description {
+              font-size: 1.15vw;
+              padding-bottom: 1.3vw;
+            }
+            & div {
+              border: solid 0.1vw black;
+              width: 22%;
+              height: 26%;
+              border-radius: 1.5vw;
+              .btn-left {
+                width: 35%;
+                border-radius: 1vw 0 0 1vw;
+                font-size: 2.5vw;
+                padding: 0 0.2vw 0.3vw 0;
+              }
+              .btn-right {
+                width: 35%;
+                border-radius: 0 1vw 1vw 0;
+                font-size: 1.6vw;
+                padding: 0.1vw 0 0 0.25vw;
+              }
+              .topics-number {
+                width: 30%;
+              }
+            }
+          }
+          &__options {
+            width: 17%;
+            padding: 0.4vw 0.4vw 1.5vw 0;
+            & a {
+              height: 3.5vw;
+              width: 3.5vw;
+              & i {
+                font-size: 3vw;
+                height: 100%;
+                width: 100%;
+                padding: 1vw 1vw 0 0;
+              }
+            }
+            & h3 {
+              font-size: 2vw;
+            }
+          }
+        }
+      }
+      &__price {
+        width: 35%;
+        border-radius: 0.4vw;
+
+        &__detail {
+          width: 100%;
+          &__sous-total {
+            width: 100%;
+            margin-bottom: 2vw;
+            & h2 {
+              width: 75%;
+              font-size: 1.8vw;
+              & .span1 {
+                padding: 0.5vw 0 0 0.35vw;
+                font-size: 0.9vw;
+              }
+            }
+            & h3 {
+              width: 25%;
+              font-size: 1.3vw;
+            }
+          }
+          &__frais-envoi {
+            margin-bottom: 2vw;
+            & h2 {
+              width: 75%;
+              font-size: 1.9vw;
+            }
+            & h3 {
+              width: 25%;
+              font-size: 1.3vw;
+            }
+          }
+          &__total-price {
+            width: 100%;
+            margin-bottom: 2vw;
+            & h2 {
+              width: 75%;
+              font-size: 1.9vw;
+              & p {
+                font-size: 1.1vw;
+              }
+            }
+            & h3 {
+              width: 25%;
+              font-size: 1.3vw;
+            }
+          }
+        }
+        & button {
+          height: 4.5vw;
+          border-radius: 0.3vw;
+          font-size: 1.4vw;
+        }
+      }
+    }
+  }
+  @media all and (min-width: 1200px) {
+    margin-top: 9vw;
+    padding-top: 0.85vw;
+    & h1 {
+      width: 67%;
+      margin-bottom: 1vw;
+    }
+    .cart {
+      width: 67%;
+      &__container {
+        width: 65%;
+        border-radius: 0.4vw;
+        & .h2 {
+          height: 2.7vw;
+          padding-left: 2.5vw;
+          box-shadow: 0 0 0.1vw gray;
+          border-radius: 0.2vw;
+          font-size: 0.75vw;
+          margin-bottom: 0.3vw;
+        }
+        &__topic {
+          height: 11vw;
+          margin: 1vw 0 1vw 0;
+          box-shadow: 0 0 0.1vw gray;
+          border-radius: 0.4vw;
+          & img {
+            width: 20%;
+            font-size: 5vw;
+            padding: 0.1vw;
+            border-radius: 0.4vw 0 0 0.4vw;
+          }
+          &__infos {
+            width: 60%;
+            padding: 0.8vw 0 0.8vw 1vw;
+            & h2 {
+              font-size: 1.2vw;
+              padding-bottom: 0.7vw;
+            }
+            &__description {
+              font-size: 0.8vw;
+              padding-bottom: 0.8vw;
+            }
+            & div {
+              border: solid 0.1vw black;
+              width: 22%;
+              height: 26%;
+              border-radius: 1.5vw;
+              .btn-left {
+                width: 35%;
+                border-radius: 1vw 0 0 1vw;
+                font-size: 2.5vw;
+                padding: 0 0.2vw 0.3vw 0;
+              }
+              .btn-right {
+                width: 35%;
+                border-radius: 0 1vw 1vw 0;
+                font-size: 1.6vw;
+                padding: 0.1vw 0 0 0.25vw;
+              }
+              .topics-number {
+                width: 30%;
+              }
+            }
+          }
+          &__options {
+            width: 20%;
+            padding: 0.4vw 0.4vw 1.5vw 0;
+            & a {
+              height: 3.5vw;
+              width: 3.5vw;
+              & i {
+                font-size: 2vw;
+              }
+            }
+            & h3 {
+              font-size: 1.3vw;
+            }
+          }
+        }
+      }
+      &__price {
+        width: 32%;
+        margin: 1vw 0 1vw 0;
+        border-radius: 0.4vw;
+        &__detail {
+          &__sous-total {
+            width: 100%;
+            margin-bottom: 2vw;
+            & h2 {
+              width: 75%;
+              font-size: 1.1vw;
+              & .span1 {
+                padding: 0.5vw 0 0 0.35vw;
+                font-size: 0.72vw;
+              }
+            }
+            & h3 {
+              width: 25%;
+              font-size: 0.92vw;
+            }
+          }
+          &__frais-envoi {
+            margin-bottom: 2vw;
+            & h2 {
+              width: 75%;
+              font-size: 1vw;
+            }
+            & h3 {
+              width: 25%;
+              font-size: 0.8vw;
+            }
+          }
+          &__total-price {
+            width: 100%;
+            margin-bottom: 2vw;
+            & h2 {
+              width: 75%;
+              font-size: 1.1vw;
+
+              & p {
+                font-size: 0.72vw;
+              }
+            }
+            & h3 {
+              width: 25%;
+              font-size: 1vw;
+            }
+          }
+        }
+        & button {
+          height: 3vw;
+          border-radius: 0.3vw;
+          font-size: 0.85vw;
+        }
+      }
+    }
+  }
+}

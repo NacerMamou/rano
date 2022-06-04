@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- LINK TO FONT AWESOME-->
+    <script
+      src="https://kit.fontawesome.com/6e06be2705.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- LINK TO Monserrat Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LINK TO CSS STYLE SHEET -->
+    <link rel="stylesheet" href="../styling/main.css" />
+    <title>Welcome to Orinonco</title>
+  </head>
+  <body>
+    <nav id="navigation-menu">
+      <a href="../index.html" class="navlogo" id="allItemsFilter">
+        <i class="fa-solid fa-cart-shopping"></i> ORINOCO
+      </a>
+      <ul class="navlist">
+        <a href="../index.html" id="allItemsFilter">
+          <i class="fa-solid fa-dumpster"></i>
+        </a>
+
+        <a href="../index.html">
+          <i class="fa-solid fa-user"></i>
+        </a>
+
+        <a href="../index.html">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </a>
+        <a href="../cart/cart.html">
+          <i class="fa-solid fa-cart-shopping" id="cartClick"></i>
+        </a>
+      </ul>
+    </nav>
+
+    <div id="navigation-filter">
+      <ul class="navfilter">
+        <a href="index.html" id="woodTableFilter" class="navfilter__link">
+          WOOD
+        </a>
+        <a href="index.html" id="cameraFilter" class="navfilter__link">
+          CAMERAS
+        </a>
+        <a href="index.html" id="teddyFilter" class="navfilter__link">
+          TEDDIES
+        </a>
+      </ul>
+    </div>
+
+    <div id="cart-form-presentation">
+      <h1 class="h1"></h1>
+      <div class="cart">
+        <div class="cart__validation">
+          <div class="cart__validation__header">
+            <h2>VALIDATION DE LA COMMANDE</h2>
+            <p>(VEUILLEZ REMPLIR LE FORMULAIRE CI-DESSOUS)</p>
+            <a href="index.html">
+              <i id="cartValidationExit" class="fa-solid fa-xmark"></i>
+            </a>
+          </div>
+          <div class="cart__validation__steps">
+            <div class="cart__validation__steps-name">
+              <i class="fa-solid fa-check"></i> Panier
+            </div>
+            <div class="cart__validation__steps--line-between"></div>
+            <div class="cart__validation__steps-name">
+              <i class="fa-solid fa-2"></i> Validation
+            </div>
+            <div class="cart__validation__steps--line-between"></div>
+            <div class="cart__validation__steps-name">
+              <i class="fa-solid fa-3"></i>Confirmation
+            </div>
+          </div>
+          <div class="cart__validation__order">
+            <h3>Détails</h3>
+            <div class="cart__validation__order--info">
+              <p id="itemsNumber" class="cart__validation__order--info-number">
+                34 articles
+              </p>
+              <p id="totalPrice2" class="cart__validation__order--info-price">
+                Total: 13.90€
+              </p>
+              <a
+                href="../cart/cart.html"
+                id="orderAjust"
+                class="cart__validation__order--info-ajust"
+              >
+                Modifier la <br />
+                commande
+              </a>
+            </div>
+          </div>
+          <form class="cart__validation__form" action="/" method="GET">
+            <div class="cart__validation__form__section">
+              <h3>Cordonnées</h3>
+              <div class="cart__validation__form__section__field lname-width">
+                <label>Prénom <span>*</span></label>
+                <input type="text" name="lname" id="lname" />
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Field is empty or incorrect</small>
+              </div>
+              <div class="cart__validation__form__section__field fname-width">
+                <label>Nom <span>*</span></label>
+                <input type="text" name="fname" id="fname" />
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Field is empty or incorrect</small>
+              </div>
+              <div class="cart__validation__form__section__field email-width">
+                <label>Email <span>*</span></label>
+                <input type="email" name="email" id="email" />
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Email is empty or not valid</small>
+              </div>
+              <div class="cart__validation__form__section__field phone-width">
+                <label>Téléphone </label>
+                <input type="text" name="phone" id="phone" />
+              </div>
+            </div>
+            <div class="cart__validation__form__section">
+              <h3>ADRESSE</h3>
+
+              <div class="cart__validation__form__section__field number-width">
+                <label>Numéro <span>*</span></label>
+                <input type="text" name="adressNumber" id="addressNumber" />
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Field is empty or incorrect</small>
+              </div>
+
+              <div class="cart__validation__form__section__field street-width">
+                <label>Rue/Avenue/Place... <span>*</span></label>
+                <input type="text" name="streetName" id="streetName" />
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Field is Empty or incorrect</small>
+              </div>
+              <div class="cart__validation__form__section__field zipcode-width">
+                <label>Code Postal <span>*</span></label>
+                <input type="text" name="zipCode" id="zipCode" />
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Field is Empty or incorrect</small>
+              </div>
+              <div class="cart__validation__form__section__field town-width">
+                <label>Ville</label>
+                <input type="text" name="town" id="town" />
+              </div>
+              <div class="cart__validation__form__section__field country-width">
+                <label>Pays <span>*</span></label>
+                <input type="text" name="country" id="country" />
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Field is Empty or incorrect</small>
+              </div>
+            </div>
+            <div class="cart__validation__form__submit">
+              <div class="cart__validation__form__submit__checkbox">
+                <input
+                  type="checkbox"
+                  id="formCheckbox"
+                  name="vehicle1"
+                  value="Bike"
+                />
+                <label>J'accepte les conditions générales d'utilisation</label>
+              </div>
+              <button type="submit" id="cartFinalValidation">
+                VALIDER MA RESERVATION
+              </button>
+            </div>
+            <div class="cart__validation__form__pvlife">
+              <i class="fa-solid fa-user-shield"></i>
+              <p>
+                Votre vie privée : Votre email et numéro de téléphone sont
+                utilisés uniquement pour le suivi de votre réservation. Ils ne
+                sont pas communiqués aux magasins et cette collecte ne sert pas
+                à la prospection commerciale.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="icons-container">
+        <i class="fa-brands fa-twitter"></i>
+        <div class="tilted-line">/</div>
+        <i class="fa-brands fa-facebook"></i>
+        <div class="tilted-line">/</div>
+        <i class="fa-brands fa-instagram"></i>
+        <div class="tilted-line">/</div>
+        <i class="fa-brands fa-linkedin"></i>
+        <div class="tilted-line">/</div>
+        <i class="fa-solid fa-basketball"></i>
+      </div>
+      <div class="links-container">
+        <ul class="left-links">
+          <li>WORK</li>
+          <li>STORY</li>
+          <li>SERVICES</li>
+        </ul>
+        <div class="logo">ORINOCO</div>
+        <ul class="right-links">
+          <li>CAREERS</li>
+          <li>CONTACT US</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./cart-form.js"></script>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- LINK TO FONT AWESOME-->
+    <script
+      src="https://kit.fontawesome.com/6e06be2705.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- LINK TO Monserrat Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LINK TO CSS STYLE SHEET -->
+    <link rel="stylesheet" href="../styling/main.css" />
+    <title>Welcome to Orinonco</title>
+  </head>
+  <body>
+    <nav id="navigation-menu">
+      <a href="../index.html" class="navlogo" id="allItemsFilter">
+        <i class="fa-solid fa-cart-shopping"></i> ORINOCO
+      </a>
+      <ul class="navlist">
+        <a href="../index.html" id="allItemsFilter">
+          <i class="fa-solid fa-dumpster"></i>
+        </a>
+
+        <a href="../index.html" id="allItemsFilter">
+          <i class="fa-solid fa-user"></i>
+        </a>
+
+        <a href="../index.html">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </a>
+        <a href="../index.html">
+          <i class="fa-solid fa-cart-shopping" id="cartClick"></i>
+        </a>
+      </ul>
+    </nav>
+
+    <div id="navigation-filter">
+      <ul class="navfilter">
+        <a href="index.html" id="woodTableFilter" class="navfilter__link">
+          WOOD
+        </a>
+        <a href="index.html" id="cameraFilter" class="navfilter__link">
+          CAMERAS
+        </a>
+        <a href="index.html" id="teddyFilter" class="navfilter__link">
+          TEDDIES
+        </a>
+      </ul>
+    </div>
+
+    <div id="added-to-cart-presentation">
+      <h1 class="h1"></h1>
+      <div class="itemPage">
+        <div class="itemPage__addedToCart">
+          <div class="itemPage__addedToCart__message">
+            <i
+              class="fa-solid fa-check itemPage__addedToCart__message--check"
+            ></i>
+            <p>Product successefuly added to cart</p>
+            <a
+              href="index.html"
+              class="itemPage__addedToCart__message--exit"
+              id="goAhead"
+            >
+              <i class="fa-solid fa-x"></i>
+            </a>
+          </div>
+          <div class="itemPage__addedToCart__summary">
+            <img id="itemImage" src="./img/teddy_1.jpg" alt="" />
+            <div class="itemPage__addedToCart__summary__elements">
+              <h2 id="itemName">Rouge Elixir Mat</h2>
+              <div class="itemPage__addedToCart__summary__elements--property">
+                <h4>Teinte :</h4>
+                <p>01.Nude</p>
+              </div>
+              <div class="itemPage__addedToCart__summary__elements--property">
+                <h4>Quantity:</h4>
+                <p>3</p>
+              </div>
+              <h3
+                id="itemPrice"
+                class="itemPage__addedToCart__summary__elements--price"
+              >
+                38,85 €
+              </h3>
+              <div class="itemPage__addedToCart__summary__elements--buttons">
+                <button
+                  class="itemPage__addedToCart__summary__elements--buttons-left"
+                  id="continueShopping"
+                >
+                  CONTINUER MES ACHATS
+                </button>
+                <button
+                  id="seeCart"
+                  class="itemPage__addedToCart__summary__elements--buttons-right"
+                >
+                  VOIR MON PANIER
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="icons-container">
+        <i class="fa-brands fa-twitter"></i>
+        <div class="tilted-line">/</div>
+        <i class="fa-brands fa-facebook"></i>
+        <div class="tilted-line">/</div>
+        <i class="fa-brands fa-instagram"></i>
+        <div class="tilted-line">/</div>
+        <i class="fa-brands fa-linkedin"></i>
+        <div class="tilted-line">/</div>
+        <i class="fa-solid fa-basketball"></i>
+      </div>
+      <div class="links-container">
+        <ul class="left-links">
+          <li>WORK</li>
+          <li>STORY</li>
+          <li>SERVICES</li>
+        </ul>
+        <div class="logo">ORINOCO</div>
+        <ul class="right-links">
+          <li>CAREERS</li>
+          <li>CONTACT US</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="added-to-cart.js"></script>
+  </body>
+</html>

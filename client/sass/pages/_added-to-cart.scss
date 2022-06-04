@@ -1,0 +1,488 @@
+@mixin added-to-cart-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 35vw;
+  padding-top: 0.85vw;
+  position: relative;
+  & h1 {
+    display: flex;
+    width: 67%;
+    margin-bottom: 1vw;
+  }
+  .itemPage {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    &__addedToCart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 92%;
+      box-shadow: 0 0 0.1vw grey;
+      border-radius: 0.4vw;
+      &__message {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: $bgdColor14;
+        height: 7%;
+        &--check {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+          font-size: 3.5vw;
+          height: 6vw;
+          width: 6vw;
+          color: $bgdColor12;
+          border: 0.13vw solid $bgdColor12;
+          border-radius: 50%;
+          margin: 0 1vw 0 2vw;
+        }
+        & p {
+          display: flex;
+          font-size: 3.5vw;
+          font-weight: 600;
+          width: 90%;
+          color: $bgdColor12;
+        }
+        &--exit {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 7%;
+          padding: 0;
+          text-decoration: none;
+          margin-right: 1.5vw;
+          & i {
+            display: flex;
+            color: black;
+            font-size: 3vw;
+            font-weight: 600;
+            opacity: 0.75;
+          }
+        }
+      }
+      &__summary {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        height: 93%;
+        & img {
+          display: flex;
+          width: 100%;
+          height: 57%;
+          object-fit: cover;
+        }
+        &__elements {
+          display: flex;
+          height: 43%;
+          flex-direction: column;
+          width: 100%;
+          & h2 {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            font-size: 6vw;
+            font-weight: 600;
+            margin: 2vw 0 1.2vw 0;
+          }
+          &--property {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            margin: 0 0 1vw 0;
+            & h4 {
+              display: flex;
+              align-items: center;
+              font-size: 3.5vw;
+              font-weight: 300;
+              opacity: 0.6;
+              margin: 0 1.2vw 0vw 0;
+            }
+            & p {
+              display: flex;
+              align-items: center;
+              font-size: 3.3vw;
+              font-weight: 600;
+              margin: 0 0 0 0;
+            }
+          }
+          & h3 {
+            display: flex;
+            align-items: center;
+            height: 10%;
+            margin: 5vw 0 8vw 0;
+            justify-content: end;
+            color: $txtColor7;
+            font-size: 6vw;
+          }
+          &--buttons {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            height: 12.5vw;
+            &-left {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 61%;
+              height: 100%;
+              border-radius: 0.6vw;
+              border: none;
+              background-color: white;
+              color: black;
+              border: 0.1vw solid black;
+              font-size: 3.5vw;
+              font-weight: 600;
+              padding: 0 2.5vw;
+            }
+            &-right {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 36%;
+              height: 100%;
+              border-radius: 0.6vw;
+              border: none;
+              background-color: $txtColor7;
+              color: white;
+              font-size: 3.4vw;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (min-width: 576px) {
+    margin-top: 15vw;
+    padding-top: 0.85vw;
+    & h1 {
+      margin-bottom: 1vw;
+    }
+    .itemPage {
+      width: 95%;
+      &__addedToCart {
+        box-shadow: 0 0 0.1vw grey;
+        border-radius: 0.4vw;
+        &__message {
+          background-color: $bgdColor14;
+          padding: 4vw 1vw;
+          &--check {
+            font-size: 2.5vw;
+            height: 4vw;
+            width: 4vw;
+            border: 0.13vw solid $bgdColor12;
+            border-radius: 50%;
+          }
+          & p {
+            font-size: 2.8vw;
+          }
+          &--exit {
+            width: 4%;
+            & i {
+              font-size: 2.5vw;
+            }
+          }
+        }
+        &__summary {
+          flex-direction: row;
+          justify-content: space-between;
+          width: 100%;
+          padding: 0 3.3vw 0 0;
+          & img {
+            height: 100%;
+            width: 48%;
+          }
+          &__elements {
+            height: 100%;
+            flex-direction: column;
+            width: 48%;
+            & h2 {
+              font-size: 4.3vw;
+              margin: 2vw 0 1.2vw 0;
+            }
+            &--property {
+              margin: 0 0 1vw 0;
+              & h4 {
+                font-size: 2.5vw;
+                margin: 0 1.2vw 0vw 0;
+              }
+              & p {
+                font-size: 2.3vw;
+                margin: 0 0 0 0;
+              }
+            }
+            & h3 {
+              margin: 5vw 0 8vw 0;
+              font-size: 4.1vw;
+            }
+            &--buttons {
+              width: 100%;
+              height: 7.5vw;
+              &-left {
+                width: 61%;
+                height: 100%;
+                border-radius: 0.6vw;
+                border: 0.1vw solid black;
+                font-size: 2.2vw;
+                padding: 0 2.5vw;
+              }
+              &-right {
+                width: 36%;
+                height: 100%;
+                border-radius: 0.6vw;
+                font-size: 2vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media all and (min-width: 768px) {
+    margin-top: 12vw;
+    padding-top: 0.85vw;
+    & h1 {
+      margin-bottom: 1vw;
+    }
+    .itemPage {
+      &__addedToCart {
+        top: 10vw;
+        width: 90%;
+        box-shadow: 0 0 0.1vw grey;
+        border-radius: 0.4vw;
+        &__message {
+          width: 100%;
+          &--check {
+            font-size: 2.5vw;
+            height: 4vw;
+            width: 4vw;
+            border: 0.13vw solid $bgdColor12;
+            border-radius: 50%;
+            margin: 0 1vw 0 2vw;
+          }
+          & p {
+            font-size: 2.5vw;
+          }
+          &--exit {
+            width: 7%;
+            & i {
+              font-size: 2.3vw;
+            }
+          }
+        }
+        &__summary {
+          padding: 0 3.3vw 0 0;
+          & img {
+            width: 40%;
+          }
+          &__elements {
+            width: 56%;
+            & h2 {
+              font-size: 3.6vw;
+              margin: 2vw 0 1vw 0;
+            }
+            &--property {
+              margin: 0 0 0.8vw 0;
+              & h4 {
+                font-size: 2.2vw;
+                margin: 0 1.2vw 0vw 0;
+              }
+              & p {
+                font-size: 2vw;
+              }
+            }
+            & h3 {
+              margin: 2.5vw 0 5vw 0;
+              font-size: 3.2vw;
+            }
+            &--buttons {
+              height: 6.5vw;
+              &-left {
+                width: 61%;
+                border-radius: 0.6vw;
+                border: 0.1vw solid black;
+                font-size: 1.8vw;
+                padding: 0 2.5vw;
+              }
+              &-right {
+                width: 36%;
+                height: 100%;
+                border-radius: 0.6vw;
+                font-size: 1.7vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media all and (min-width: 992px) {
+    margin-top: 9vw;
+    padding-top: 0.85vw;
+    & h1 {
+      margin-bottom: 1vw;
+    }
+    .itemPage {
+      width: 90%;
+      &__addedToCart {
+        width: 75%;
+        height: 38vw;
+        box-shadow: 0 0 0.1vw grey;
+        border-radius: 0.4vw;
+        &__message {
+          &--check {
+            font-size: 1.8vw;
+            height: 2.8vw;
+            width: 2.8vw;
+            border: 0.13vw solid $bgdColor12;
+            border-radius: 50%;
+            margin: 0 1vw 0 2vw;
+          }
+          & p {
+            font-size: 2vw;
+          }
+          &--exit {
+            width: 7%;
+            & i {
+              color: black;
+              font-size: 1.4vw;
+            }
+          }
+        }
+        &__summary {
+          height: 81%;
+          padding: 0 3.3vw 0 0;
+          & img {
+            width: 40%;
+          }
+          &__elements {
+            width: 56%;
+            & h2 {
+              font-size: 2.6vw;
+              margin: 2vw 0 0.4vw 0;
+            }
+            &--property {
+              width: 100%;
+              margin: 0 0 0.35vw 0;
+              & h4 {
+                font-size: 1.4vw;
+                margin: 0 0.8vw 0 0;
+              }
+              & p {
+                font-size: 1.2vw;
+              }
+            }
+            & h3 {
+              height: 10%;
+              margin: 2.5vw 0 3vw 0;
+              font-size: 2.3vw;
+            }
+            &--buttons {
+              height: 4.4vw;
+              &-left {
+                width: 61%;
+                height: 100%;
+                border-radius: 0.6vw;
+                border: 0.1vw solid black;
+                font-size: 1.2vw;
+                padding: 0 2.5vw;
+              }
+              &-right {
+                width: 36%;
+                height: 100%;
+                border-radius: 0.6vw;
+                color: white;
+                font-size: 1.1vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media all and (min-width: 1200px) {
+    margin-top: 9vw;
+    padding-top: 0.85vw;
+    & h1 {
+      margin-bottom: 1vw;
+    }
+    .itemPage {
+      width: 67%;
+      &__addedToCart {
+        width: 46vw;
+        height: 23vw;
+        box-shadow: 0 0 0.1vw grey;
+        border-radius: 0.4vw;
+        &__message {
+          padding: 2.2vw 0vw;
+          &--check {
+            font-size: 1.1vw;
+            height: 1.6vw;
+            width: 1.6vw;
+            border: 0.13vw solid $bgdColor12;
+            border-radius: 50%;
+            margin: 0 1vw 0 2vw;
+          }
+          & p {
+            font-size: 1.2vw;
+          }
+          &--exit {
+            & i {
+              font-size: 0.9vw;
+            }
+          }
+        }
+        &__summary {
+          height: 81%;
+          padding: 0 3.3vw 0 0;
+          & img {
+            width: 40%;
+          }
+          &__elements {
+            width: 56%;
+            & h2 {
+              font-size: 1.2vw;
+              margin: 2vw 0 0.4vw 0;
+            }
+            &--property {
+              margin: 0 0 0.35vw 0;
+              & h4 {
+                font-size: 0.9vw;
+                margin: 0 0.5vw 0 0;
+              }
+              & p {
+                font-size: 0.9vw;
+              }
+            }
+            & h3 {
+              margin: 2.5vw 0 3vw 0;
+            }
+            &--buttons {
+              height: 2.8vw;
+              &-left {
+                width: 61%;
+                border-radius: 0.5vw;
+                border: 0.1vw solid black;
+                font-size: 0.8vw;
+                padding: 0 2.5vw;
+              }
+              &-right {
+                width: 36%;
+                border-radius: 0.5vw;
+                font-size: 0.8vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

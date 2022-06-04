@@ -1,0 +1,380 @@
+@mixin order-confirmation-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 35vw;
+  padding-top: 0.85vw;
+  position: relative;
+  & h1 {
+    display: flex;
+    width: 67%;
+    margin-bottom: 1vw;
+  }
+  .cart {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    &__orderConfirmation {
+      display: flex;
+      width: 90%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      box-shadow: 0 0 0.5vw $bgdColor12;
+      border-radius: 0.3vw;
+      padding: 7.5vw 0;
+      &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 8.5vw;
+        border: 0.6vw solid $bgdColor12;
+        color: $bgdColor12;
+        border-radius: 50%;
+        height: 12vw;
+        width: 12vw;
+        margin: 0 0 5vw 0;
+      }
+      &__title {
+        display: flex;
+        justify-content: center;
+        width: 92%;
+        margin: 0 0 4vw 0;
+        font-size: 4.3vw;
+        font-weight: 600;
+      }
+      &__teddiesOrder {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.5vw;
+        font-weight: 300;
+        margin: 0 0 2vw 0;
+        &-Id {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          font-size: 3.5vw;
+          font-weight: 600;
+          margin: 0 0 0 1vw;
+        }
+      }
+      &__woodTablesOrder {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.5vw;
+        font-weight: 300;
+        margin: 0 0 2vw 0;
+        &-Id {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          font-size: 3.5vw;
+          font-weight: 600;
+          margin: 0 0 0 1vw;
+        }
+      }
+      &__camerasOrder {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.5vw;
+        font-weight: 300;
+        margin: 0 0 6vw 0;
+        &-Id {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          font-size: 3.5vw;
+          font-weight: 600;
+          margin: 0 0 0 1vw;
+        }
+      }
+      &__message {
+        display: flex;
+        justify-content: center;
+        width: 98%;
+        font-size: 2.3vw;
+        font-weight: 300;
+        font-style: italic;
+        text-decoration: underline;
+        margin: 0 0 6vw 0;
+        opacity: 0.8;
+      }
+      &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: $bgdColor12;
+        color: white;
+        font-size: 4.5vw;
+        font-weight: 600;
+        padding: 4vw 20vw;
+        border-radius: 0.3vw;
+      }
+    }
+  }
+  @media all and (min-width: 576px) {
+    margin-top: 15vw;
+    padding-top: 0.85vw;
+    & h1 {
+      margin-bottom: 1vw;
+    }
+    .cart {
+      &__orderConfirmation {
+        box-shadow: 0 0 0.5vw $bgdColor12;
+        border-radius: 0.3vw;
+        padding: 7.5vw 0;
+        &__icon {
+          font-size: 8.5vw;
+          border: 0.6vw solid $bgdColor12;
+          height: 12vw;
+          width: 12vw;
+          margin: 0 0 5vw 0;
+        }
+        &__title {
+          width: 92%;
+          margin: 0 0 4vw 0;
+          font-size: 4.3vw;
+        }
+        &__teddiesOrder {
+          font-size: 3.5vw;
+          margin: 0 0 2vw 0;
+          &-Id {
+            font-size: 3.5vw;
+            margin: 0 0 0 1vw;
+          }
+        }
+        &__woodTablesOrder {
+          font-size: 3.5vw;
+          margin: 0 0 2vw 0;
+          &-Id {
+            font-size: 3.5vw;
+            margin: 0 0 0 1vw;
+          }
+        }
+        &__camerasOrder {
+          font-size: 3.5vw;
+          margin: 0 0 6vw 0;
+          &-Id {
+            font-size: 3.5vw;
+            margin: 0 0 0 1vw;
+          }
+        }
+        &__message {
+          width: 98%;
+          font-size: 2.3vw;
+          margin: 0 0 6vw 0;
+        }
+        &__button {
+          font-size: 3.5vw;
+          padding: 2vw 8vw;
+          border-radius: 0.3vw;
+        }
+      }
+    }
+  }
+  @media all and (min-width: 768px) {
+    margin-top: 11.3vw;
+    padding-top: 0.85vw;
+    & h1 {
+      margin-bottom: 1vw;
+    }
+    .cart {
+      width: 88%;
+      &__orderConfirmation {
+        width: 85%;
+        box-shadow: 0 0 0.5vw $bgdColor12;
+        border-radius: 0.3vw;
+        padding: 5vw 0;
+        &__icon {
+          font-size: 7vw;
+          border: 0.6vw solid $bgdColor12;
+          height: 9vw;
+          width: 9vw;
+          margin: 0 0 4vw 0;
+        }
+        &__title {
+          width: 90%;
+          margin: 0 0 1.8vw 0;
+          font-size: 3vw;
+        }
+        &__teddiesOrder {
+          width: 90%;
+          font-size: 1.5vw;
+          margin: 0 0 1.3vw 0;
+          &-Id {
+            font-size: 1.5vw;
+            margin: 0 0 0 1vw;
+          }
+        }
+        &__woodTablesOrder {
+          font-size: 1.5vw;
+          margin: 0 0 1vw 0;
+          &-Id {
+            font-size: 1.5vw;
+            margin: 0 0 0 1vw;
+          }
+        }
+        &__camerasOrder {
+          font-size: 1.5vw;
+          margin: 0 0 2vw 0;
+          &-Id {
+            font-size: 1.5vw;
+            margin: 0 0 0 1vw;
+          }
+        }
+        &__message {
+          width: 90%;
+          font-size: 1.7vw;
+          margin: 0 0 4vw 0;
+        }
+        &__button {
+          font-size: 2vw;
+          padding: 1.6vw 6vw;
+          border-radius: 0.3vw;
+        }
+      }
+    }
+  }
+  @media all and (min-width: 992px) {
+    margin-top: 9vw;
+    padding-top: 0.85vw;
+    & h1 {
+    }
+    .cart {
+      width: 88%;
+      &__orderConfirmation {
+        width: 85%;
+        box-shadow: 0 0 0.5vw $bgdColor12;
+        border-radius: 0.3vw;
+        padding: 5vw 0;
+        &__icon {
+          font-size: 7vw;
+          border: 0.6vw solid $bgdColor12;
+          border-radius: 50%;
+          height: 9vw;
+          width: 9vw;
+          margin: 0 0 4vw 0;
+        }
+        &__title {
+          width: 90%;
+          margin: 0 0 1.8vw 0;
+          font-size: 3vw;
+        }
+        &__teddiesOrder {
+          width: 90%;
+          font-size: 1.5vw;
+          margin: 0 0 1.3vw 0;
+          &-Id {
+            font-size: 1.5vw;
+            margin: 0 0 0 1vw;
+          }
+        }
+        &__woodTablesOrder {
+          font-size: 1.5vw;
+          margin: 0 0 1vw 0;
+          &-Id {
+            font-size: 1.5vw;
+            margin: 0 0 0 1vw;
+          }
+        }
+        &__camerasOrder {
+          font-size: 1.5vw;
+          margin: 0 0 2vw 0;
+          &-Id {
+            font-size: 1.5vw;
+            margin: 0 0 0 1vw;
+          }
+        }
+        &__message {
+          width: 90%;
+          font-size: 1.7vw;
+          margin: 0 0 4vw 0;
+        }
+        &__button {
+          font-size: 2vw;
+          padding: 1.6vw 6vw;
+          border-radius: 0.3vw;
+        }
+      }
+    }
+  }
+  @media all and (min-width: 1200px) {
+    margin-top: 9vw;
+    padding-top: 0.85vw;
+    & h1 {
+    }
+    .cart {
+      width: 67%;
+      &__orderConfirmation {
+        height: 37vw;
+        box-shadow: 0 0 0.5vw $bgdColor12;
+        border-radius: 0.3vw;
+        padding: 3vw 0;
+        &__icon {
+          font-size: 5vw;
+          border: 0.6vw solid $bgdColor12;
+          height: 7vw;
+          width: 7vw;
+          margin: 0 0 3vw 0;
+        }
+        &__title {
+          width: 90%;
+          margin: 0 0 1.3vw 0;
+          font-size: 2vw;
+        }
+        &__teddiesOrder {
+          width: 90%;
+          font-size: 1vw;
+          margin: 0 0 1.3vw 0;
+          &-Id {
+            font-size: 1vw;
+            margin: 0 0 0 1vw;
+          }
+        }
+        &__woodTablesOrder {
+          width: 100%;
+          font-size: 1vw;
+          margin: 0 0 1vw 0;
+          &-Id {
+            font-size: 1vw;
+            margin: 0 0 0 1vw;
+          }
+        }
+        &__camerasOrder {
+          width: 100%;
+          font-size: 1vw;
+          margin: 0 0 1.3vw 0;
+          &-Id {
+            font-size: 1vw;
+            margin: 0 0 0 1vw;
+          }
+        }
+        &__message {
+          width: 90%;
+          font-size: 1.1vw;
+          margin: 0 0 3vw 0;
+        }
+        &__button {
+          font-size: 1.3vw;
+          padding: 0.8vw 2vw;
+          border-radius: 0.3vw;
+        }
+      }
+    }
+  }
+}
