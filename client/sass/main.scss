@@ -1,22 +1,29 @@
 @import "./base/typography";
 @import "./utils/variables";
 
-@import "./pages/home-page";
-@import "./pages/product-page";
-@import "./pages/added-to-cart";
-@import "./pages/cart";
-@import "./pages/cart-form";
-@import "./pages/order-confirmation";
-
+// The header and footer are common to all the pages
 @import "./layout/header";
+@import "./layout/footer";
+@import "./components/loaders.scss";
 
-// This the global container used to load the content of a page
+// Homepage Architecture
+// Importing Homepage partials
+@import "./pages/home-page";
 
 /******Header*********/
+
+#loader {
+  @include hompepageLoader;
+}
+
 #home-page-presentation {
   @include home-page-style;
 }
 /******Footer*******/
+
+// Product page Architecture
+// Importing Product page partials
+@import "./pages/product-page";
 
 /******Header*********/
 #product-page-presentation {
@@ -24,17 +31,29 @@
 }
 /******Footer*******/
 
+// added to cart page Architecture
+// Importing added to cart page partials
+
+@import "./pages/added-to-cart";
 /******Header*********/
 #added-to-cart-presentation {
   @include added-to-cart-style;
 }
 /******Footer*******/
 
+// cart presentation Architecture
+// Importing cart page partials
+
+@import "./pages/cart";
 /******Header*********/
 #cart-presentation {
   @include cart-presentation-style;
 }
 /******Footer*******/
+
+// cart form page Architecture
+// Importing cart form page partials
+@import "./pages/cart-form";
 
 /******Header*********/
 #cart-form-presentation {
@@ -42,10 +61,12 @@
 }
 /******Footer*******/
 
+// Product page Architecture
+// Importing Product page partials
+@import "./pages/order-confirmation";
+
 /******Header*********/
 #order-confirmation-presentation {
   @include order-confirmation-style;
 }
 /******Footer*******/
-
-@import "./layout/footer";

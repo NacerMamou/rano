@@ -4,7 +4,8 @@
   align-items: center;
   width: 100%;
   height: auto;
-  margin-top: 35vw;
+  margin-top: 40vw;
+  margin-bottom: 10vw;
   padding-top: 0.85vw;
   position: relative;
   & h1 {
@@ -161,7 +162,8 @@
   }
 
   @media all and (min-width: 576px) {
-    margin-top: 15vw;
+    margin-top: 17vw;
+    margin-bottom: 8vw;
     padding-top: 0.85vw;
     & h1 {
       margin-bottom: 1vw;
@@ -247,7 +249,8 @@
     }
   }
   @media all and (min-width: 768px) {
-    margin-top: 12vw;
+    margin-top: 17vw;
+    margin-bottom: 7vw;
     padding-top: 0.85vw;
     & h1 {
       margin-bottom: 1vw;
@@ -325,7 +328,8 @@
     }
   }
   @media all and (min-width: 992px) {
-    margin-top: 9vw;
+    margin-top: 17vw;
+    margin-bottom: 5vw;
     padding-top: 0.85vw;
     & h1 {
       margin-bottom: 1vw;

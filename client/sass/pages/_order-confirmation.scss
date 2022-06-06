@@ -4,9 +4,10 @@
   align-items: center;
   width: 100%;
   height: auto;
-  margin-top: 35vw;
+  margin-top: 38vw;
   padding-top: 0.85vw;
   position: relative;
+  margin-bottom: 3vw;
   & h1 {
     display: flex;
     width: 67%;
@@ -128,8 +129,9 @@
     }
   }
   @media all and (min-width: 576px) {
-    margin-top: 15vw;
+    margin-top: 16.5vw;
     padding-top: 0.85vw;
+    margin-bottom: 1.5vw;
     & h1 {
       margin-bottom: 1vw;
     }
@@ -188,7 +190,7 @@
     }
   }
   @media all and (min-width: 768px) {
-    margin-top: 11.3vw;
+    margin-top: 17vw;
     padding-top: 0.85vw;
     & h1 {
       margin-bottom: 1vw;
@@ -251,7 +253,7 @@
     }
   }
   @media all and (min-width: 992px) {
-    margin-top: 9vw;
+    margin-top: 16.5vw;
     padding-top: 0.85vw;
     & h1 {
     }
@@ -316,6 +318,7 @@
   @media all and (min-width: 1200px) {
     margin-top: 9vw;
     padding-top: 0.85vw;
+    margin-bottom: 0;
     & h1 {
     }
     .cart {

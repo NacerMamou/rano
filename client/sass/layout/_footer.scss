@@ -1,335 +1,201 @@
-@media all and (max-width: 575px) {
-  #footer {
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 2vw;
+  background-color: $bgdColor12;
+  .icons-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    margin-top: 2vw;
-    background-color: $bgdColor12;
-    .icons-container {
+    padding: 6vw 0;
+    color: white;
+    & i {
       display: flex;
-      justify-content: space-between;
-      width: 100%;
-      padding: 6vw 0;
-      color: white;
-      & i {
-        display: flex;
-        width: 24%;
-        font-size: 5.5vw;
-        justify-content: center;
-        align-items: center;
-      }
-      & i:hover {
-        color: #399bea;
-      }
-      & div {
-        font-size: 4vw;
-        font-weight: 200;
-        color: $txtColor5;
+      width: 24%;
+      font-size: 5.5vw;
+      justify-content: center;
+      align-items: center;
+    }
+    & i:hover {
+      color: #399bea;
+    }
+    & div {
+      font-size: 4vw;
+      font-weight: 200;
+      color: $txtColor5;
+    }
+  }
+  .links-container {
+    display: flex;
+    width: 90%;
+    color: $txtColor5;
+    font-size: 2.2vw;
+    padding: 2.5vw 0;
+    justify-content: center;
+    .left-links {
+      display: flex;
+      align-items: center;
+      width: 35%;
+      list-style-type: none;
+      & li {
+        margin-right: 1.6vw;
       }
     }
-    .links-container {
+    .logo {
       display: flex;
-      width: 90%;
-      color: $txtColor5;
-      font-size: 2.2vw;
-      padding: 2.5vw 0;
       justify-content: center;
-      .left-links {
-        display: flex;
-        align-items: center;
-        width: 35%;
-        list-style-type: none;
-        & li {
-          margin-right: 1.6vw;
-        }
-      }
-      .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 25%;
-        color: $txtColor5;
-        font-size: 3.5vw;
-      }
-      .right-links {
-        display: flex;
-        align-items: center;
-        justify-content: end;
-        width: 40%;
-        list-style-type: none;
-        & li {
-          margin-right: 1.6vw;
-        }
+      align-items: center;
+      width: 25%;
+      color: $txtColor5;
+      font-size: 3.5vw;
+    }
+    .right-links {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      width: 40%;
+      list-style-type: none;
+      & li {
+        margin-right: 1.6vw;
       }
     }
   }
-}
-
-@media all and (min-width: 576px) {
-  #footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  @media all and (min-width: 576px) {
     margin-top: 2vw;
-    background-color: $bgdColor12;
     .icons-container {
-      display: flex;
-      justify-content: space-between;
       width: 95%;
       padding: 2vw 0;
-      color: white;
       & i {
-        display: flex;
         width: 24%;
         font-size: 2.8vw;
-        justify-content: center;
-        align-items: center;
-      }
-      & i:hover {
-        color: #399bea;
       }
       & div {
         font-size: 2.5vw;
-        font-weight: 200;
-        color: $txtColor5;
       }
     }
     .links-container {
-      display: flex;
       width: 80%;
-      color: $txtColor5;
       font-size: 1.8vw;
       padding: 1vw 0;
-      justify-content: center;
       .left-links {
-        display: flex;
-        align-items: center;
         width: 35%;
-        list-style-type: none;
         & li {
           margin-right: 1.6vw;
         }
       }
       .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 25%;
-        color: $txtColor5;
         font-size: 2.4vw;
       }
       .right-links {
-        display: flex;
-        align-items: center;
-        justify-content: end;
         width: 40%;
-        list-style-type: none;
         & li {
           margin-right: 1.6vw;
         }
       }
     }
   }
-}
-
-@media all and (min-width: 768px) {
-  #footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  @media all and (min-width: 768px) {
     margin-top: 2vw;
-    background-color: $bgdColor12;
     .icons-container {
-      display: flex;
-      justify-content: space-between;
-      width: 95%;
       padding: 1.5vw 0;
-      color: white;
       & i {
-        display: flex;
         width: 24%;
         font-size: 2.2vw;
-        justify-content: center;
-        align-items: center;
-      }
-      & i:hover {
-        color: #399bea;
       }
       & div {
         font-size: 2vw;
-        font-weight: 200;
-        color: $txtColor5;
       }
     }
     .links-container {
-      display: flex;
       width: 80%;
-      color: $txtColor5;
       font-size: 1.4vw;
       padding: 1vw 0;
-      justify-content: center;
       .left-links {
-        display: flex;
-        align-items: center;
         width: 35%;
-        list-style-type: none;
         & li {
           margin-right: 1.6vw;
         }
       }
       .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 25%;
-        color: $txtColor5;
         font-size: 1.8vw;
       }
       .right-links {
-        display: flex;
-        align-items: center;
-        justify-content: end;
         width: 40%;
-        list-style-type: none;
         & li {
           margin-right: 1.6vw;
         }
       }
     }
   }
-}
-
-@media all and (min-width: 992px) {
-  #footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  @media all and (min-width: 992px) {
     width: 100%;
     margin-top: 2vw;
-    background-color: $bgdColor12;
     .icons-container {
-      display: flex;
-      justify-content: space-between;
       width: 90%;
       padding: 1.5vw 0;
-      color: white;
       & i {
-        display: flex;
         width: 24%;
         font-size: 2vw;
-        justify-content: center;
-        align-items: center;
-      }
-      & i:hover {
-        color: #399bea;
       }
       & div {
         font-size: 1.8vw;
-        font-weight: 200;
-        color: $txtColor5;
       }
     }
     .links-container {
-      display: flex;
       width: 80%;
-      color: $txtColor5;
       font-size: 1.2vw;
       padding: 1vw 0;
-      justify-content: center;
       .left-links {
-        display: flex;
-        align-items: center;
         width: 35%;
-        list-style-type: none;
         & li {
           margin-right: 1.6vw;
         }
       }
       .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 25%;
-        color: $txtColor5;
         font-size: 1.5vw;
       }
       .right-links {
-        display: flex;
-        align-items: center;
-        justify-content: end;
         width: 40%;
-        list-style-type: none;
         & li {
           margin-right: 1.6vw;
         }
       }
     }
   }
-}
-
-@media all and (min-width: 1200px) {
-  #footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  @media all and (min-width: 1200px) {
     margin-top: 3vw;
-    background-color: $bgdColor12;
     .icons-container {
-      display: flex;
-      justify-content: space-between;
       width: 67%;
       padding: 1.5vw 0;
-      color: white;
       & i {
-        display: flex;
         width: 24%;
         font-size: 1.6vw;
-        justify-content: center;
-        align-items: center;
-      }
-      & i:hover {
-        color: #399bea;
       }
       & div {
         font-size: 1.5vw;
-        font-weight: 200;
-        color: $txtColor5;
       }
     }
     .links-container {
-      display: flex;
       width: 63%;
-      color: $txtColor5;
       font-size: 1vw;
       padding: 1vw 0;
-      justify-content: center;
       .left-links {
-        display: flex;
-        align-items: center;
         width: 35%;
-        list-style-type: none;
         & li {
           margin-right: 1.6vw;
         }
       }
       .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 25%;
-        color: $txtColor5;
         font-size: 1.3vw;
       }
       .right-links {
-        display: flex;
-        align-items: center;
-        justify-content: end;
         width: 40%;
-        list-style-type: none;
         & li {
           margin-right: 1.6vw;
         }
