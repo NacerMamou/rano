@@ -1,10 +1,10 @@
-// let teddiesApi = "https://www.orinoco.nmamou.com/api/teddies";
-// let camerasApi = "https://www.orinoco.nmamou.com/api/cameras";
-// let woodTablesApi = "https://www.orinoco.nmamou.com/api/furniture";
+let teddiesApi = "https://www.orinoco.ranmamou.com/api/teddies";
+let camerasApi = "https://www.orinoco.ranmamou.com/api/cameras";
+let woodTablesApi = "https://www.orinoco.ranmamou.com/api/furniture";
 
-let teddiesApi = "http://localhost:8007/api/teddies";
-let camerasApi = "http://localhost:8007/api/cameras";
-let woodTablesApi = "http://localhost:8007/api/furniture";
+//let teddiesApi = "http://localhost:8007/api/teddies";
+//let camerasApi = "http://localhost:8007/api/cameras";
+//let woodTablesApi = "http://localhost:8007/api/furniture";
 
 let elt = document.querySelector("#home-page-presentation .products");
 
