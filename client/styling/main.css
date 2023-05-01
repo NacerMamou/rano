@@ -471,8 +471,8 @@ html body {
   height: 100vh;
   width: 100vw;
   z-index: 1;
-  background: black;
-  animation: hide 2s forwards;
+  background: rgb(0, 0, 0);
+  animation: hide 0.5s forwards;
 }
 #loader .turning-border {
   display: flex;
